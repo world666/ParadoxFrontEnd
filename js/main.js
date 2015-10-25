@@ -8,22 +8,18 @@ var markers = [{ "position": "128.3657142857143", "markerPosition": "7" },
 $( document ).ready(function() 
 {
 	console.log( "ready!" );
+	console.log( "send json request: " + JSON.stringify({ Markers: markers }));
 	$.ajax({
 		type: 'POST',
 		url: 'http://192.168.1.11:5000',
 		data: JSON.stringify({ Markers: markers }),
 		dataType: 'json',
 		success: function (data) {
-			if (data.response == 'captcha') {
-				alert('captcha');
-			} else if (data.response == 'success') {
-				alert('success');
-			} else {
-				alert('sorry there was an error');
-			}
+			console.log( "Server answer: " + JSON.stringify(data));
 		},
 		error: function (result) {
-			alert("Error");
+			console.log( "Server answer: " + result.statusText);
+			console.log( "Ready State: " + result.readyState);
 		}
 	});
 });

@@ -2,11 +2,6 @@ body {
   padding-top: 50px;
 }
 
-body .modal-dialog
-{
-  width: 400px;
-}
-
 .starter-template {
   padding: 40px 15px;
   text-align: center;

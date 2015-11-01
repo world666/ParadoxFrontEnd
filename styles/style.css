@@ -6,6 +6,21 @@ body {
   padding: 40px 15px;
   text-align: center;
 }
+
+.login
+{
+		background-image: -webkit-linear-gradient(top, #CC0000 0%, #B20000 100%);
+		background-image:      -o-linear-gradient(top, #CC0000 0%, #B20000 100%);
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#CC0000), to(B20000));
+		background-image:         linear-gradient(to bottom, #CC0000 0%, #B20000 100%);
+		/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#FF646464', GradientType=0);
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);*/
+		background-repeat: repeat-x;
+
+		/*border-radius: 4px;*/
+}
+
+
 .fade{ 	
 }
 

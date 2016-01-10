@@ -18,7 +18,7 @@
 	  
 	</head>
 
-	<body ng-controller="MainCtrl">
+	<body>
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 		  <div class="container">
 			<div class="navbar-header">
@@ -69,12 +69,13 @@
 		</div><!-- /.container -->
 		
 		<div class="container">
-		<ul>
-			<li ng-repeat="phone in phones">
-			  <span>{{phone.name}}</span>
-			  <p>{{phone.snippet}}</p>
-			</li>
-		</ul>
+		  <form name="userForm"  ng-controller="MainCtrl">
+			<label>Name:
+			  <input type="text" name="userName"
+					 ng-model="user.name"
+					 ng-model-options="{ getterSetter: true }" />
+			</label>
+		  </form>
 		</div>
 		
 		
